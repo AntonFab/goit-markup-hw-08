@@ -16,14 +16,30 @@ ul {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .section-title {
@@ -34,4 +50,8 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  @media screen and (min-width: $mobile) and (min-width: $tablet) {
+    font-size: 28px;
+  }
 }

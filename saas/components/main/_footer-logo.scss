@@ -6,4 +6,9 @@
   margin: 0;
   padding-bottom: 10px;
   color: $primary-white-color;
+
+  @media screen and (max-width: $max-mobile) {
+    display: flex;
+    justify-content: center;
+  }
 }

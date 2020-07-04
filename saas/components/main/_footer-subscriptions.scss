@@ -7,6 +7,11 @@
   display: inline-block;
   text-transform: uppercase;
   padding-bottom: 20px;
+
+  @media screen and (max-width: $max-mobile) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .subscription-input {
@@ -19,10 +24,15 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: $primary-white-color;
+
+  @media screen and (max-width: $max-mobile) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .subscription-button {
-  display: inline-flex;
+  display: flex;
   background-color: $accent-color;
   color: $primary-white-color;
   align-items: center;
@@ -35,6 +45,11 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
+
+  @media screen and (max-width: $max-mobile) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscription-icon {

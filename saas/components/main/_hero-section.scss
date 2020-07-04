@@ -1,6 +1,6 @@
 .hero-section {
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -13,11 +13,25 @@
     ),
     url(../images/hero-bg.jpg);
   text-align: center;
+
+  @media screen and (max-width: $tablet) {
+    max-width: 480px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    max-height: 400px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+  }
 }
 
 .hero-title {
   margin-top: 0px;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -28,4 +42,11 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.62;
+    padding-top: 118px;
+    width: 360px;
+  }
 }
