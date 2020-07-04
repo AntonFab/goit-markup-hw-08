@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  color: $secondary-text-color;
+  background-color: $primary-white-color;
+  text-decoration: none;
+  padding: 10px 32px;
+  min-width: 200px;
+}
+
+.button.primary {
+  color: $primary-white-color;
+  background-color: $accent-color;
+  border: transparent;
+}
+
+.hero-section .button.primary {
+  font-weight: 700;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

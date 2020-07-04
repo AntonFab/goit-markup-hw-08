@@ -1,0 +1,72 @@
+.team {
+  display: flex;
+}
+
+.our-team {
+  background-color: $secondary-bg-color;
+}
+
+.item-team {
+  padding-bottom: 24px;
+  background-color: $primary-white-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  width: 270px;
+}
+
+.item-team + .item-team {
+  margin-left: 30px;
+}
+
+.worker {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.worker-photo {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.profession {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.soc-networks {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-networks .item + .item {
+  margin-left: 11px;
+}
+
+.soc-icons {
+  fill: currentColor;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $primary-icons-color;
+  transition: background-color $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+
+  &:hover {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
