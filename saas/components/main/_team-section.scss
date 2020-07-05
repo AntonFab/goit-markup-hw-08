@@ -74,7 +74,10 @@
 
 .worker-photo {
   display: block;
-  margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .profession {
@@ -112,5 +115,14 @@
   &:hover {
     color: $primary-white-color;
     background-color: $accent-color;
+  }
+}
+
+.photo-box {
+  margin-bottom: 30px;
+  height: 260px;
+
+  @media screen and (max-width: $max-mobile) {
+    height: 320px;
   }
 }
