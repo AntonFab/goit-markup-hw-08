@@ -166,6 +166,7 @@ ul {
   .link-page {
     display: inline-block;
     padding: 0;
+    font-size: 18px;
   }
 }
 
@@ -802,8 +803,10 @@ ul {
   background-color: #2f303a;
 }
 
-.footer > .container {
-  height: 603px;
+@media screen and (max-width: 767px) {
+  .footer > .container {
+    height: 603px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -817,6 +820,7 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center;
+    height: 461px;
   }
 }
 
@@ -825,6 +829,7 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 252px;
   }
 }
 
@@ -965,12 +970,23 @@ ul {
 
 .subscription {
   margin-left: auto;
-  padding-top: 56px;
+}
+
+@media screen and (max-width: 767px) {
+  .subscription {
+    padding-top: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscription {
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription {
+    padding-top: 72px;
   }
 }
 
@@ -1031,6 +1047,14 @@ ul {
   .subscription-button {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-button {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 

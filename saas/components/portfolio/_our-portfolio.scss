@@ -21,19 +21,20 @@
     margin: 15px;
 
     &:nth-child(2n + 1) {
-      margin-left: 0px;
+      margin-left: 0;
     }
 
     &:nth-child(2n) {
-      margin-right: 0px;
+      margin-right: 0;
     }
 
     &:nth-child(-n + 2) {
       margin-top: 0;
     }
 
-    &:nth-last-child(-n + 2) {
+    &:last-child {
       margin-bottom: 0;
+      margin-right: 0;
     }
   }
 }
@@ -69,11 +70,7 @@
 }
 
 .portfolio-box {
-  height: 260px;
-
-  @media screen and (max-width: $max-mobile) {
-    height: 320px;
-  }
+  height: 294px;
 }
 
 .our-portfolio .text-card {

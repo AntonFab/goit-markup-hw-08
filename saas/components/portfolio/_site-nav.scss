@@ -1,5 +1,8 @@
 .link-page.portfolio {
   color: $accent-color;
+  @media screen and (max-width: $max-mobile) {
+    padding-bottom: 8px;
+  }
 }
 
 .portfolio::after {

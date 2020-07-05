@@ -4,7 +4,9 @@
 }
 
 .footer > .container {
-  height: 603px;
+  @media screen and (max-width: $max-mobile) {
+    height: 603px;
+  }
 
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     display: flex;
@@ -12,9 +14,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+
+    height: 461px;
   }
 
   @media screen and (min-width: $desktop) {
     display: flex;
+
+    height: 252px;
   }
 }
