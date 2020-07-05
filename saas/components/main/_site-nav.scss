@@ -15,21 +15,14 @@
 }
 
 .site-nav {
-  @media screen and (min-width: $desktop) {
-    display: flex;
-
-    & .item:not(:last-child) {
-      margin-right: 50px;
-    }
-
-    & a:hover,
-    a:focus {
-      color: $accent-color;
-    }
-  }
-
   @media screen and (max-width: $max-mobile) {
     padding: 60px 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 81px;
+    margin-right: 84px;
   }
 }
 
@@ -41,6 +34,17 @@
       margin-bottom: 40px;
     }
   }
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    & a:hover,
+    a:focus {
+      color: $accent-color;
+    }
+  }
 }
 
 .link-page {
@@ -50,7 +54,6 @@
   padding-bottom: 32px;
 
   color: $secondary-text-color;
-  font-size: 18px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -61,6 +64,10 @@
   @media screen and (max-width: $max-mobile) {
     display: inline-block;
     padding: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
   }
 }
 

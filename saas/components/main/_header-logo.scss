@@ -11,6 +11,10 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $tablet) {
+    display: inherit;
+  }
 }
 
 .logo-web {

@@ -14,11 +14,21 @@
   @media screen and (max-width: $max-mobile) {
     font-size: 18px;
   }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    display: flex;
+  }
 }
 
 .phone-email .item {
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -33,6 +43,10 @@
 .phone-email {
   @media screen and (max-width: $max-mobile) {
     text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    padding: 21px 0;
   }
 
   @media screen and (min-width: $desktop) {
