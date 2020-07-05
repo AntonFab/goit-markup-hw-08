@@ -60,6 +60,22 @@
   overflow: hidden;
 }
 
+.portfolio-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.portfolio-box {
+  height: 260px;
+
+  @media screen and (max-width: $max-mobile) {
+    height: 320px;
+  }
+}
+
 .our-portfolio .text-card {
   position: absolute;
   top: 0;
