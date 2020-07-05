@@ -22,13 +22,21 @@
 }
 
 .phone-email .item {
-  &:not(:last-child) {
-    margin-bottom: 16px;
+  @media screen and (max-width: $max-mobile) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
-  @media screen and (min-width: $tablet) {
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 32px 0;
+    margin-right: 30px;
   }
 }
 
@@ -50,7 +58,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    display: inline-block;
+    display: flex;
     margin-left: auto;
   }
 }

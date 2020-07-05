@@ -113,12 +113,6 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .main-nav {
-    margin-left: 80px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .site-nav {
     padding: 60px 0;
@@ -172,12 +166,6 @@ ul {
   .link-page {
     display: inline-block;
     padding: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .link-page {
-    font-size: 18px;
   }
 }
 
@@ -289,13 +277,22 @@ ul {
   }
 }
 
-.phone-email .item:not(:last-child) {
-  margin-bottom: 16px;
+@media screen and (max-width: 767px) {
+  .phone-email .item:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .phone-email .item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .phone-email .item {
+    padding: 32px 0;
+    margin-right: 30px;
   }
 }
 
@@ -321,7 +318,9 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .phone-email {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: auto;
   }
 }
