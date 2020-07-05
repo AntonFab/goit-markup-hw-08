@@ -1,5 +1,12 @@
 .call-action {
   padding-top: 60px;
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    display: inline-block;
+    text-align: center;
+    padding-top: 65px;
+    margin-right: 85px;
+  }
 }
 
 .action-text {

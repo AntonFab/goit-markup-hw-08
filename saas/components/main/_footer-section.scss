@@ -4,6 +4,12 @@
 }
 
 .footer > .container {
-  // display: flex;
+  display: flex;
   height: 603px;
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
 }

@@ -11,4 +11,8 @@
     display: flex;
     justify-content: center;
   }
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    padding-bottom: 20px;
+  }
 }

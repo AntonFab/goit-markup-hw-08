@@ -20,8 +20,15 @@
   :focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    margin-top: 8px;
+  }
 }
 
 .footer-address {
   padding-top: 60px;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    margin-left: 76px;
+  }
 }
