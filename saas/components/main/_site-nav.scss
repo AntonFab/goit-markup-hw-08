@@ -1,6 +1,13 @@
 .main-nav {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: $max-mobile) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: space-between;
+    position: relative;
+  }
 }
 
 .navigation-block {
@@ -50,4 +57,42 @@
 
 .studio.link-page {
   color: $accent-color;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  @media screen and (max-width: $max-mobile) {
+    display: none;
+
+    background-color: $primary-white-color;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    border: solid 1px salmon;
+
+    &.is-open {
+      display: block;
+    }
+  }
 }
