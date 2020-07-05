@@ -4,10 +4,11 @@
 }
 
 .footer > .container {
-  display: flex;
   height: 603px;
 
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    display: flex;
+
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
